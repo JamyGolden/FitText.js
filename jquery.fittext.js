@@ -1,12 +1,15 @@
 /*global jQuery */
 /*!
-* FitText.js 1.1
+* FitText.js 1.1.1
 *
-* Copyright 2011, Dave Rupert http://daverupert.com
+* Copyright 2013, Jamy Golden http://css-plus.com
+*
+* Original plugin developed by:
+* Dave Rupert http://daverupert.com
 * Released under the WTFPL license
 * http://sam.zoy.org/wtfpl/
 *
-* Date: Thu May 05 14:23:00 2011 -0600
+* Date: Sat November 23 16:25:00 2013 +0200
 */
 
 (function( $ ){
