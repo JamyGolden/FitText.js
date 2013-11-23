@@ -27,12 +27,11 @@
 
       // Resizer() resizes items based on the object width divided by the compressor * 10
       var resizer = function () {
-        var fontSize = Math.max(Math.min($this.width() / (compressor*10), parseFloat(settings.maxFontSize)), parseFloat(settings.minFontSize)) + 'px';
-
+        var fontSize = Math.max(Math.min($this.width() / (compressor*10), parseFloat(settings.maxFontSize)), parseFloat(settings.minFontSize));
         $this.css('font-size', fontSize);
 
-        if(settings.setLineHeight === true){
-            $this.css('line-height', fontSize);
+        if(typeof settings.resized === 'function'){
+            settings.resized($this, fontSize);
         }
       };
 
